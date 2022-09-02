@@ -1,0 +1,13 @@
+package sec3;
+
+public class Print1 {
+
+	public static void main(String[] args) {
+		System.out.print("a\n");
+		System.out.print("b\n");
+		System.out.print("c\n");
+		
+		System.out.println("d"); //println 출력 후 줄바꿈을 진행한다. - 출력 대용자(\n)= newline
+	}
+
+}
