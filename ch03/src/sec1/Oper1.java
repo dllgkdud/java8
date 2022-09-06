@@ -14,7 +14,8 @@ public class Oper1 {
 		//운용방식1 : +ab	- pre(fix) order (전위)
 		//운용방식2 : ab+	- post(fix) order (후위)
 		//운용방식3 : a+b	- in(fix) order (중위)
-
+		int x = 10, y = 20;
+		System.out.println(++x);
 	}
 
 }
