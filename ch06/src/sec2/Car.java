@@ -7,7 +7,7 @@ public class Car {
 	int speed;
 	final static int MAX_SPEED=500;	//멤버 상수: 값이 한 곳(static)에 저장되어 더 이상 바뀌지 않는다(final).(대문자 작성)
 	final static int MIN_SPEED=0;	//멤버 상수는 반드시 초기화가 되어야 하며, 그 값은 바뀌지 않는다.
-	//[접근제한자] [수정자=mode 이퀴어?] 데이터타입 필드명;
+	//[접근제한자] [수정자] 데이터타입 필드명;
 	
 	public Car(){ }	//기본생성자 - 선언 또는 기술하지 않아도 자바에서 자동으로 생성(생략가능)
 	public Car(String name) {this.name=name;}

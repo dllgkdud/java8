@@ -4,65 +4,43 @@ public class Student {
 	String name;
 	int kor;
 	int eng;
-	int mat;
+	int mat;	//getter-setter설정을 하지 않으면 private을 설정할 수 없다.
 	
 	public Student(){ }
 	public Student(String name){this.name=name;}
-	public Student(String name, int kor, int eng, int mat){
-		this.name=name; this.kor=kor; this.eng=eng; this.mat=mat;
+	public Student(String name, int kor, int eng, int mat) {
+		this.name = name; this.kor = kor; this.eng = eng; this.mat = mat;
 	}
 	
-	public String getName() {
-		return name;
+	public int calcTot(){
+		return kor+eng+mat;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public double calcAvg(){
+		double avg = (double)(kor+eng+mat)/3;
+		return avg;
 	}
-	public int getKor() {
-		return kor;
-	}
-	public void setKor(int kor) {
-		this.kor = kor;
-	}
-	public int getEng() {
-		return eng;
-	}
-	public void setEng(int eng) {
-		this.eng = eng;
-	}
-	public int getMat() {
-		return mat;
-	}
-	public void setMat(int mat) {
-		this.mat = mat;
-	}
-	
-	int sum=this.kor+this.eng+this.mat;
-	int c=3;
-	double avg=(double)sum/c;
-
-	public void calcTot(){
-		System.out.println(sum);
-	}
-	public void calcAvg(){
-		System.out.println(avg);
-	}
-	public void calcHak(){
+	public String calcHak(){
+		String hak="";
+		double avg = this.calcAvg();
 		if(avg>=90){
-			System.out.println("A");
+			hak="A";
 		} else if(avg>=80){
-			System.out.println("B");
+			hak="B";
 		} else if(avg>=70){
-			System.out.println("C");
-		} else{
-			System.out.println("D");
+			hak="C";
+		} else {
+			hak="D";
 		}
+		return hak;
 	}
-	public void calcRes(){
+	public String calcRes(){
+		String res="";
+		double avg=this.calcAvg();
 		if(avg>=80){
-			System.out.println("합격");
-		} else{
-			System.out.println("불합격");
+			res="합격";
+		} else {
+			res="불합격";
 		}
+		return res;
 	}
 }
