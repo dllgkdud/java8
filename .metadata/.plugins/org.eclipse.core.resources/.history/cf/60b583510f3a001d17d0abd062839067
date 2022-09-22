@@ -1,0 +1,44 @@
+package sec2;
+
+public class Board {
+	int num;
+	String sub;
+	String con;
+	String wri;
+	String date;
+	
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	public String getSub() {
+		return sub;
+	}
+	public void setSub(String sub) {
+		this.sub = sub;
+	}
+	public String getCon() {
+		return con;
+	}
+	public void setCon(String con) {
+		this.con = con;
+	}
+	public String getWri() {
+		return wri;
+	}
+	public void setWri(String wri) {
+		this.wri = wri;
+	}
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
+	}
+	
+	public String boardWrite(){
+		return num, sub, con, wri, date;
+	}
+}

@@ -1,0 +1,61 @@
+package sec2;
+
+public class Board {
+	private int num;
+	private String sub;
+	private String con;
+	private String aut;
+	private String res;
+	
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	public String getSub() {
+		return sub;
+	}
+	public void setSub(String sub) {
+		this.sub = sub;
+	}
+	public String getCon() {
+		return con;
+	}
+	public void setCon(String con) {
+		this.con = con;
+	}
+	public String getAut() {
+		return aut;
+	}
+	public void setAut(String aut) {
+		this.aut = aut;
+	}
+	public String getRes() {
+		return res;
+	}
+	public void setRes(String res) {
+		this.res = res;
+	}
+	public void boardWrite(int num, String sub, String con, String aut, String res){
+		this.num = num; this.sub = sub; this.con = con; this.aut = aut; this.res = res;
+	}
+	public void boardUpdate(int num, String sub, String con){	//매개변수 = 입력받는 변수
+		if(num==this.num){
+			this.sub = sub;
+			this.con = con;
+			this.res = res;
+		}
+	}
+	public void boardDelete(int num){
+		if(num==this.num){
+			this.sub = "";
+			this.con = "";
+			this.aut = "";
+			this.res = "";
+		}
+	}
+	public void boardSearch(int num){
+		
+	}
+}

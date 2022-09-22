@@ -1,0 +1,11 @@
+package sec2;
+
+public class Board {
+	int num;
+	String sub;
+	String con;
+	String wri;
+	String date;
+	
+	
+}
