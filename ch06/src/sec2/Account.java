@@ -1,28 +1,22 @@
 package sec2;
 
 public class Account {
-	private String acc;
-	private String accOwn;
+	private String account;
+	private String owner;
 	private int balance;
 	private int money;
-	final static int MIN_BAL=0;
 	
-	public Account(){ }
-	public Account(String acc, String accOwn){
-		this.acc=acc; this.accOwn=accOwn;
+	public String getAccount() {
+		return account;
 	}
-	
-	public String getAcc() {
-		return acc;
+	public void setAccount(String account) {
+		this.account = account;
 	}
-	public void setAcc(String acc) {
-		this.acc = acc;
+	public String getOwner() {
+		return owner;
 	}
-	public String getAccUser() {
-		return accOwn;
-	}
-	public void setAccUser(String accOwn) {
-		this.accOwn = accOwn;
+	public void setOwner(String owner) {
+		this.owner = owner;
 	}
 	public int getBalance() {
 		return balance;
@@ -38,19 +32,18 @@ public class Account {
 	}
 	
 	public void runDeposit(int money){
-		this.balance=this.balance+money;
+		this.balance += money;
 	}
 	public void runWithdraw(int money){
-		if(this.balance-money>MIN_BAL){
-			this.balance=this.balance-money;
-		}
+		if(this.balance>0){
+			this.balance -= money;
+		} else System.out.println("잔액이 부족합니다.");
 	}
-	public int runBalance(){
-		return balance;
-	}
+	public int runBalance(){return balance;}
 	public void printAccount(){
-		System.out.println("계좌번호: "+acc+", 계좌주: "+accOwn+", 잔액: "+balance);
+		System.out.println("계좌번호: "+account);
+		System.out.println("예금주: "+owner);
+		System.out.println("잔액: "+balance);
 	}
-	
 }
 

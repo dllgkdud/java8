@@ -1,0 +1,5 @@
+package sec3;
+
+public class Singletone {	//필요에 따라 하나의 객체만 생성하는 클래스
+	
+}

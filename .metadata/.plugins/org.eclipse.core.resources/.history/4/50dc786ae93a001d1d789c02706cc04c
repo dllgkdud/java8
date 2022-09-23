@@ -1,0 +1,9 @@
+package sec3.content;
+//sec3 : 상위패키지, content : 하위패키지
+//java에 패키지 생성 시 최종 도메인을 먼저 작성한다.	kr.co.thejoeun
+//								kr.co.thejoeun.ctrl
+//								kr.co.thejoeun.model
+//								kr.co.thejoeun.view
+public class Test1 {
+
+}
