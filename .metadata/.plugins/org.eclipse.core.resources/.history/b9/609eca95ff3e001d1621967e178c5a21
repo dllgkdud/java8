@@ -1,0 +1,9 @@
+package test5;
+
+public class SoundableExample {
+
+	public static void main(String[] args) {
+		System.out.println(soundable.);
+	}
+
+}

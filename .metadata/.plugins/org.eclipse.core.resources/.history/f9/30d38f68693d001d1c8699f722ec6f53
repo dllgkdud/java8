@@ -1,0 +1,9 @@
+
+public class CellPhoneEx {
+
+	public static void main(String[] args) {
+		CellPhone p1 = new CellPhone();
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package sec2;
+
+public class PromotionEx extends SmartPhone{
+	
+	public static void main(String[] args) {
+		//부모-자식관계 상에서만 객체를 생성하거나 형변환이 가능하다.
+		//자식-부모관계 상에서는 자동 캐스팅이 불가하다.
+		//형제관계에서는 자동 캐스팅이나 강제 캐스팅이 불가하다.
+	}
+
+}

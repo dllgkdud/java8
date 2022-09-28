@@ -6,4 +6,11 @@
 <fullyQualifiedTypeName name="sec1.MemberCollecter"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="sec2.CellPhone"/>
+<fullyQualifiedTypeName name="sec3.MichelinTire"/>
+<fullyQualifiedTypeName name="sec3.KumhoTire"/>
+<fullyQualifiedTypeName name="sec3.HankookTire"/>
+<fullyQualifiedTypeName name="sec2.Television"/>
+<fullyQualifiedTypeName name="sec2.Audio"/>
+<fullyQualifiedTypeName name="sec2.RemoteControl"/>
 </qualifiedTypeNameHistroy>
