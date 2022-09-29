@@ -13,4 +13,19 @@
 <fullyQualifiedTypeName name="sec2.Television"/>
 <fullyQualifiedTypeName name="sec2.Audio"/>
 <fullyQualifiedTypeName name="sec2.RemoteControl"/>
+<fullyQualifiedTypeName name="sec1.OuterClass.Inner"/>
+<fullyQualifiedTypeName name="sec1.OuterClass"/>
+<fullyQualifiedTypeName name="sec1.OuterClass.Inner2"/>
+<fullyQualifiedTypeName name="test6.Car.Tire"/>
+<fullyQualifiedTypeName name="test6.Car.Engine"/>
+<fullyQualifiedTypeName name="test6.Anonymous"/>
+<fullyQualifiedTypeName name="java.lang.ClassCastException"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+<fullyQualifiedTypeName name="sec2.RunException"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
 </qualifiedTypeNameHistroy>
