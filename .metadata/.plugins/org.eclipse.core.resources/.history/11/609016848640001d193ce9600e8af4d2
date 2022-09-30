@@ -1,0 +1,13 @@
+package sec2;
+
+public class Student {
+	int sno;
+	String name;
+	
+	public Student(){}
+	public Student(int sno){ this.sno = sno; }
+	public Student(int sno, String name){ 
+		this.sno = sno;
+		this.name = name;
+		}
+}
