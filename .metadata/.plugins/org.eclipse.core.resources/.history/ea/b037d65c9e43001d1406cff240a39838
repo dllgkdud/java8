@@ -1,0 +1,12 @@
+package sec4;
+
+public class StringEx1 {
+	public static void main(String[] args) {
+		String str1 = new String("LeeHaYoung");
+		
+		System.out.println("str1= "+str1);
+		System.out.println("forth char: "+str1.charAt(3));
+		System.out.println("str compare: "+str1.equals("leehayoung"));
+	}
+
+}
