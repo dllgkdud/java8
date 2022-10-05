@@ -1,0 +1,9 @@
+package sec1;
+//멀티 스레드 상에서 같은 직업 그룹에 속할 수 있으며, 각기 다른 직업들을 하나의 직업 그룹으로 설정할 수도 있다.
+//멀티 스레드에서 A thread가  cpu 안에서 동작되다가 B thread가 처리되기 위해 cpu 안으로 로딩되면, 처리되던 A thread는 B thread가 있던 캐시 메모리의 자리로 이동된다. -> 문맥교환(Context switching)
+//이러한 일이 자주 일어나게 된다면, 캐시 메모리에 계속 스던 자리에만 쓰게 됩니다. -> 지역성(locality)
+public class ThreadEx3 {
+	public static void main(String[] args) {
+		
+	}
+}

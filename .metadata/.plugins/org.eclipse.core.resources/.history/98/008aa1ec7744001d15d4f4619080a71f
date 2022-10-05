@@ -1,0 +1,44 @@
+package sec1;
+//멀티 스레드 상에서 같은 직업 그룹에 속할 수 있으며, 각기 다른 직업들을 하나의 직업 그룹으로 설정할 수도 있다.
+//멀티 스레드에서 A thread가  CPU 안에서 동작되다가 B thread가 처리되기 위해 CPU 안으로 로딩되면, 처리되던 A thread는 B thread가 있던 캐시 메모리의 자리로 이동된다. -> 문맥교환(Context switching)
+//이러한 일이 자주 일어나게 된다면, 캐시 메모리에 계속 스던 자리에만 쓰게 됩니다. -> 지역성(locality) - 메모리 낭비가 우려
+//만약, 캐시 메모리가 차게 되면, 해당 데이터는 메인 메모리로 이동되고, 메인 메모리마저 꽉 차면, 가상 메모리를 이용하게 된다.
+//어떤 메모리에도 CPU가 찾는 데이터가 없는 경우 -> 스레싱(Thrashing)
+//cpu	->(store) memory-ssd	->(save) hhd
+//		<-(loading = fatch)		<-(load)
+//갑자기 예기치않은 상황이 발생할 경우 CPU는 하던 일을 멈추고, 긴급 상황을 처리한 후 원래대로 복귀한다. -> 인터럽트(interrupt)
+//만약, 스레드 종료 시 정상종료 또는 인터럽트로 인해 종료 및 일시중지될 수 있다.
+public class ThreadEx3 {
+	public static void main(String[] args) {
+		Thread th0 = new Thread(new ThreadWithRunnable());
+		th0.start();
+		System.out.println(th0.getThreadGroup());
+		
+		ThreadGroup group = new ThreadGroup("myGroup");
+		group.setMaxPriority(7);
+		
+		//th1은 myGroup에 배정됨
+		Thread th1 = new Thread(group, new ThreadWithRunnable());
+		th1.start();
+		Thread th2 = new Thread(group, new ThreadWithRunnable());
+		th2.start();
+		//group.setMaxPriority(10);
+		System.out.println(th1.getThreadGroup());
+		System.out.println(th2.getThreadGroup());
+		
+		Thread.State state = th0.getState();
+		if(state==Thread.State.NEW){
+			System.out.println("스레드 시작");
+		} else if(state==Thread.State.RUNNABLE){
+			System.out.println("스레드 실행 준비");
+		} else if(state==Thread.State.TERMINATED){
+			System.out.println("스레드 종료");
+		} else if(state==Thread.State.BLOCKED){
+			System.out.println("블로킹 발생");
+		} else if(state==Thread.State.TIMED_WAITING){
+			System.out.println("시간 만료로 인해 대기 발생");
+		} else {
+			System.out.println("알 수 없는 상황이거나 스레드 실행이 실패되었습니다.");
+		}
+	}
+}
