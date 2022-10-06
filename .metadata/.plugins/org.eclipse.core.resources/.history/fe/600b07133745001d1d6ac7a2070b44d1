@@ -1,0 +1,19 @@
+package sec1;
+@FunctionalInterface
+interface Calc {	//하나의 기능만을 정의할 수 있다.
+	public void method1();
+}
+interface Calc2 {
+	public void method2(int x, int y);
+}
+interface Calc3 {
+	public int method2();
+}
+public class Lamda2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
