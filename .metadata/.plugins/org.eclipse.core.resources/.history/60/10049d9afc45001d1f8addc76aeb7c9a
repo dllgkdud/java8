@@ -1,0 +1,27 @@
+package sec1;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Vector;
+
+public class CollectionEx2 {
+	public static void main(String[] args) {
+		List lst = new ArrayList();			//부모 인터페이스에서 발생된 것은 자식으로 형변환이 가능하지만 형제 인터페이스끼리의 형변환은 불가하다.
+		lst = new Vector();			
+		lst = new LinkedList();
+		
+		ArrayList lst2 = new Arraylist();	//ArrayList lst = new Vector(); (x)
+		
+		method1(lst);
+		method1(lst2);
+	  //method2(lst) lst는 List로 선언된 것이며 메소드의 매개변수는 ArrayList로 선언되었기 뗴문에 형변환/사용이 불가하다.
+		method2(lst2);
+	}
+	static void  method1(List is){
+		
+	}
+	static void  method2(ArrayList is){
+		
+	}
+}
